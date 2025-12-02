@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar {
+    background-color: #285690;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#logo {
+    width: 60px;
+    height: 55px;
+    margin-right: 20px;
+}
+.t-p {
+    font-size: 24px;
+}
+.college-name {
+    text-decoration: none;
+}
+.college-name:hover {
+    text-decoration: underline;
+}
+.navbar-nav .nav-link:hover {
+    font-weight: 500;
+}
+.login-container {
+    min-height: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    background-color: #ffffff4e;
+}
+.end-line{
+    color: #285690;
+}
+
+.end-line:hover{
+    color: #0056b3 !important;
+}
+.btn-primary {
+    background-color: #285690 !important;
+}
+
+.btn-primary:hover{
+    background-color: #0056b3 !important;
+}
+.captcha {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.captcha-box {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 14px;
+    }
+    .t-p {
+        font-size: 21px;
+    }
+    .college-name {
+        font-size: 0.87rem;
+    }
+}
+@media (max-width: 398px) {
+    .college-name{
+        font-size: 0.75rem;
+    }
+    .t-p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-container {
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
