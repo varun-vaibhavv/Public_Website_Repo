@@ -1,0 +1,341 @@
+/* User's CSS will be copied here *//* === Base Styles === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, .college-name:hover, .list-group-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+strong {
+    color: #ff0000;
+}
+
+/* === Navbar === */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #285690;
+    z-index: 1000;
+}
+
+#logo {
+    width: 60px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.t-p {
+    font-size: 24px;
+}
+
+.college-name {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: 500;
+}
+
+/* === Hero Section === */
+.hero-section {
+    height: 400px;
+    display: grid;
+    place-items: center;
+}
+
+.welcome {
+    background-color: rgba(2, 0, 36, 0.5);
+    width: 87%;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+/* === Academic Section === */
+#Academic_info {
+    margin: 100px 0 50px 0;
+}
+
+/* === Cards === */
+.card {
+    border-radius: 10px;
+}
+
+.card-body {
+    height: 315px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-body > .btn {
+    background-color: #285690;
+    color: white;
+    border: none;
+}
+
+.card-body > .btn:hover {
+    background-color: #0056b3;
+    border: 1px solid black;
+}
+
+.card-body > .btn:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* === Modal === */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 95%;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 7px;
+}
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #285690;
+    border-radius: 5px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color: #ff0000;
+}
+
+/* === Job Section === */
+.job-section {
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.job-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.job-card {
+    min-width: 300px;
+    flex: 0 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.scroll-btn,
+.scroll-left,
+.scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #1e5799;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.scroll-btn:hover,
+.scroll-left:hover,
+.scroll-right:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #0056b3;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.job-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#job-cards-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+}
+
+#job-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* === Gallery Section === */
+.gallery-section {
+    background-color: #1e5799;
+    padding: 30px;
+    color: white;
+}
+
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gallery-header h2 {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-header h2 i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.view-all-btn {
+    background-color: white;
+    color: #1e5799;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    border-radius: 10px;
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+/* === Social Section === */
+.social-network-section {
+    background-color: #1f2d3d;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.divider {
+    border-top: 1px solid #ffffff;
+    width: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.social-network-card {
+    background-color: #273b50;
+    color: #ffffff;
+    border-radius: 7px;
+    border: 1px solid #334a66;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-network-card:hover {
+    transform: scale(1.05);
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.widget-placeholder {
+    color: #b0b0b0;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+/* === Footer === */
+footer > div > p {
+    padding-top: 15px;
+}
+
+/* === Responsive Media Queries === */
+@media (max-width: 768px) {
+    #navbarNav > .navbar-nav {
+        align-items: center;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .t-p {
+        font-size: 21px;
+    }
+    .college-name {
+        font-size: 0.87rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .role {
+        max-width: 70% !important;
+    }
+}
+
+@media (max-width: 398px) {
+    .college-name {
+        font-size: 0.75rem;
+    }
+    .t-p {
+        font-size: 18px;
+    }
+    .role {
+        max-width: 80% !important;
+    }
+}
